@@ -1,0 +1,17 @@
+footer{
+    width: 100%;
+    height: 64px;
+    background: #a1b5cb;
+}
+footer p{
+    text-align: center;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 1rem;
+}
+@media screen and (min-width:768px) {
+    footer p{
+        font-size: 18px;
+    }
+}

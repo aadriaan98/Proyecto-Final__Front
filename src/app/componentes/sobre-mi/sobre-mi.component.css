@@ -1,0 +1,65 @@
+#sobre-mi{
+    width: 100%;
+    background: #EAF2FD;
+    padding-bottom: 2rem;
+}
+#sobre-mi h2{
+    width: 90%;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 1rem;
+    color: #464646;
+}
+#sobre-mi p{
+    width: 90%;
+    height: 70%;
+    font-weight: 400;
+    color: #464646;
+    font-size: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+@media screen and (min-width:480px) {
+    #sobre-mi{
+        height: 300px;
+    }
+    #sobre-mi h2{
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-bottom: 0;
+    }
+    #sobre-mi p{
+        height: 112px; 
+        padding: 0.5rem 2rem 2rem 1rem;
+    }
+}
+@media screen and (min-width: 650px) {
+    #sobre-mi{
+        height: 275px;
+    }
+}
+@media screen and (min-width: 768px) {
+    #sobre-mi{
+        height: 250px;
+    }
+    #sobre-mi{
+        padding-top: .5rem;
+    }
+}
+@media screen and (min-width:912px) {
+    #sobre-mi{
+        height: 400px;
+    }
+    #sobre-mi h2{
+        font-size: 35px;
+        margin-left: 2rem;
+        padding-top: 2rem;
+    }
+    #sobre-mi p{
+        width: 75%;
+        font-size: 24px;
+        margin-left: 2rem;
+        padding-top: 2rem;
+    }
+}

@@ -1,0 +1,125 @@
+section{
+    padding-top: 1rem;
+}
+#proyectos{
+    width: 100%;
+    background: #E5E5E5;
+}
+#proyectos h2{
+    color: #464646;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+.proyecto-item{
+    width: 100%;
+    height: 400px;
+}
+.proyecto-item img{
+    width: 296px;
+    height: 144px;
+    margin-left: 2.5rem;
+    box-shadow: 15px 15px 15px #464646;
+}
+.proyecto-item h3{
+    font-size: 16px;
+    color: #464646;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem;
+}
+.proyecto-item p{
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.proyecto-item div{
+    text-align: center;
+}
+.proyecto-item button{
+    padding: 1em;
+    font-size: 16px;
+    margin-left: 1em; 
+    transition: 0.5s all;  
+    color: royalblue; 
+}
+.proyecto-item button:hover{
+    transform: scale(1.1);
+}
+@media screen and (min-width:480px) {
+    .proyecto-item img{
+        text-align: center;
+        width: 400px;
+        height: 180px;
+    }
+    .proyecto-item h3{
+        text-align: start;
+        margin-left: 1.5rem;
+    }
+    .proyecto-item p{
+        text-align: start;
+        margin-left: 2.5rem;
+    }
+    .proyecto-item div{
+        text-align: start;
+        margin-left: 1.5rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    #proyectos h2{
+        font-size: 35px;
+        padding: 3rem;
+    }
+    .proyecto-item{
+        height: 581px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .proyecto-item img{
+        width: 752px;
+        height: 406px;
+    }
+    .proyecto-item h3{
+        font-size: 22px;
+        margin-top: 11rem;
+    }
+    .proyecto-item p{
+        font-size: 16px;
+        margin-top: 15rem;
+        margin-left: -8.5rem;
+    }
+    .proyecto-item div{
+        margin-left: -14rem;
+        margin-top: 18rem;
+    }
+}
+/*botones*/
+.demo a{
+    color: #2A7AE4;
+    text-decoration: none;
+}
+.demo a:hover{
+    color: #2A7AE4;
+}
+.demo{
+    border-style: double;
+    color: #2A7AE4;
+    background-color: #F5F5F5;
+    border-color: #2A7AE4;
+}
+.repo a:hover{
+    color: #ffffff;
+}
+.repo a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.repo{
+    background-color: #2A7AE4;
+    color: #f5f5f5;
+    border-style: double;
+    border-color: #2A7AE4;
+}
