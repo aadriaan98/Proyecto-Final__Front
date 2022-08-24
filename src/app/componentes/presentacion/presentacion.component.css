@@ -1,8 +1,23 @@
 .presentacion{
     width: 100%;
-    background: #E5E5E5;
+    background-image: linear-gradient(135deg,#25184d, #51254b);
+    background-size: 500%;
+    animation: fanimado 5s infinite;
+    font-family: initial;
+    color: white;
     display: flex;
     flex-direction: column-reverse;
+}
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 .presentacion img{
     width: 110px;
@@ -17,19 +32,19 @@
     font-size: 22px;
     font-weight: 700;
     padding: 1rem;
-    color: #464646;
+    color: #ffffff;
 }
 .titulos h3{
     font-size: 16px;
     font-weight: 400;
-    color: #464646;
+    color: #ffffff;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 .nav-presentacion{
     height: 50px;
     display: flex;
-    background: #a1b5cb;
+    background-image: linear-gradient(#25184d, #121d70);
     padding-left: 0.5rem;
 }
 .nav-presentacion img{

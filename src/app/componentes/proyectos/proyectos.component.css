@@ -3,10 +3,24 @@ section{
 }
 #proyectos{
     width: 100%;
-    background: #E5E5E5;
+    background-image: linear-gradient(135deg,
+    #25184d, #51254b);
+    background-size: 500%;
+    animation: fanimado 7s infinite;
+}
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 #proyectos h2{
-    color: #464646;
+    color: #ffffff;
     font-size: 22px;
     font-weight: 700;
     text-align: center;
@@ -21,11 +35,13 @@ section{
     width: 296px;
     height: 144px;
     margin-left: 2.5rem;
-    box-shadow: 15px 15px 15px #464646;
+}
+.proyecto-item p{
+    color: #ffffff;
 }
 .proyecto-item h3{
     font-size: 16px;
-    color: #464646;
+    color: #ffffff;
     font-weight: 700;
     text-align: center;
     padding: 1rem;
