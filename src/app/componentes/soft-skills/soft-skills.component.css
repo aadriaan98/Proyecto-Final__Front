@@ -20,8 +20,6 @@ section{
 #bloque-titulo{
     width: 100%;
 }
-
-
 .bloque-skills_titulo h2{
     font-size: 22px;
     font-weight: 700;
@@ -44,53 +42,38 @@ section{
     width: 100%;
 }
 li .bloque-skills_item{
-    margin: 2rem 1rem 1rem 1rem;
-    height: 150px;
-    width: 150px;
+    margin: 1rem;
+    height: 140px;
+    width: 140px;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px #464646;
 }
 
 .bloque-skills_item{
     background-color: white; 
 }
 .bloque-skills_item img{
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
 }
 .bloque-skills_item p{
     font-weight: 700;
     font-size: 16px;
     color: #ffffff;
-    margin-top: 2rem;
+    margin-top: 0rem;
     text-align: center;
 }
-
 @media screen and (min-width:480px){
-
     li .bloque-skills_item{
-        height: 160px;
-        width: 160px;
-        margin: 2rem
-    }  
-    .bloque-skills_item img{
-        width: 160px;
-        height: 160px;
-    }
+        margin: 1rem;
+    } 
 }
 @media screen and (min-width:768px) {
+    .bloque-skills{
+        display: flex;
+    }
     li .bloque-skills_item{
-        width: 200px;
-        height: 200px;
-        margin: 1rem;
-    }
-    .bloque-skills_item img{
-        width: 200px;
-        height: 200px;
-    }
-    .bloque-skills_item p{
-        margin-top: 0rem;
+        margin: 0.5rem;
     }
 }
 @media screen and (min-width:912px) {
@@ -98,14 +81,11 @@ li .bloque-skills_item{
         font-size: 35px;
         margin-left: 2rem;
     }
-    .bloque-skills ul{
-        margin-left: 2rem;
-    }
     li .bloque-skills_item{
-        margin: 2rem;
+        margin: 1rem;
     }
     .bloque-skills_item p{
-        font-size: 24px;
+        font-size: 20px;
     }
     .bloque-skills_item img{
         margin-left: 0rem;
@@ -121,14 +101,6 @@ li .bloque-skills_item{
     }
 }
 @media screen and (min-width:1024px) {
-    li .bloque-skills_item{
-        width: 270px;
-        height: 270px;
-    }
-    .bloque-skills_item img{
-        width: 270px;
-        height: 270px;
-    }
     .bloque-skills{
         width: 100%;
         justify-content: center; 
