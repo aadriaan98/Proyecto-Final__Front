@@ -16,6 +16,9 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HttpClientModule } from '@angular/common/http';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
 import { HomeComponent } from './componentes/home/home.component';
+import { interceptorProvider } from './service/interceptor-service';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -41,8 +44,11 @@ import { HomeComponent } from './componentes/home/home.component';
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

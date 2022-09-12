@@ -51,9 +51,6 @@
     width: 30px;
     height: 30px;
 }
-.correo{
-    filter: invert(1);
-}
 .nav-presentacion a{
     padding-top: .5rem;
     margin-left: 10px;
@@ -96,7 +93,7 @@
     .nav-presentacion img{
         padding-top: .5rem;
         padding-left: 2rem;
-        width: 50px;
+        width: 75px;
         height: 50px;
     }
 }

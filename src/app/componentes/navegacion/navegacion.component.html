@@ -15,7 +15,8 @@
             <li class="main-menu__item"><a href="#skills">Skills</a></li>
             <li class="main-menu__item"><a href="#formacion">Formación</a></li>
             <li class="main-menu__item"><a href="#proyectos">Proyectos</a></li>
-            <li class="main-menu__item"><a href="/iniciar-sesion">Login</a></li>
+            <button (click)="login()" *ngIf="!isLogged">Iniciar</button>
+            <button (click)="onLogOut()" *ngIf="isLogged">Salir</button>
         </ul>
     </nav>
     
