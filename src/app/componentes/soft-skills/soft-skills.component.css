@@ -43,6 +43,7 @@ section{
 }
 li .bloque-skills_item{
     margin: 1rem;
+    margin-bottom: 2rem;
     height: 140px;
     width: 140px;
     border-radius: 50%;
@@ -62,6 +63,9 @@ li .bloque-skills_item{
     color: #ffffff;
     margin-top: 0rem;
     text-align: center;
+}
+ul{
+    padding-left: 0rem;
 }
 @media screen and (min-width:480px){
     li .bloque-skills_item{
