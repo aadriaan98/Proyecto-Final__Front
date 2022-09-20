@@ -1,0 +1,24 @@
+<section>
+    <div class="form-container">
+        <h1>editar experiencia</h1>
+        <form #f="ngForm" (ngSubmit)="onUpdate()" novalidate>
+            <div class="control">
+                <label for="nombreExp">Nombre Experiencia</label>
+                <input type="text" 
+                       id="nombreExp"  
+                       name="nombreExp" 
+                       [(ngModel)]="expLab.nombreExp" required>
+            </div>
+            <div class="control">
+                <label for="descripcionExp">Descripcion Experiencia</label>
+                <input type="text" 
+                       name="descripcionExp" 
+                       id="descripcionExp"
+                       [(ngModel)]="expLab.descripcionExp" required>
+            </div>
+            <div class="control">
+                <input type="submit" value="Modificar">
+            </div>
+        </form>
+    </div>
+</section>

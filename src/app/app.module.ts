@@ -18,6 +18,9 @@ import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-ses
 import { HomeComponent } from './componentes/home/home.component';
 import { interceptorProvider } from './service/interceptor-service';
 import { FormsModule } from '@angular/forms';
+import { ExpLaboralComponent } from './componentes/exp-laboral/exp-laboral.component';
+import { NuevaExpComponent } from './componentes/exp-laboral/nueva-exp.component';
+import { EditarExpComponent } from './componentes/exp-laboral/editar-exp.component';
 
 
 
@@ -37,6 +40,9 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     IniciarSesionComponent,
     HomeComponent,
+    ExpLaboralComponent,
+    NuevaExpComponent,
+    EditarExpComponent
     
   ],
   imports: [
