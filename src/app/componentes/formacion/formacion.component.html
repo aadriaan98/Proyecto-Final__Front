@@ -1,26 +1,14 @@
-<section id="formacion">
-    <h2>
-        Formación
-    </h2>
-
-    <div>
-        <div  class="bloque-formacion">
-            <img src="../../../assets/MundosE.jpg" alt="MundosE" width="150px" height="130px">
-            <h3>Desarrollo Full-Stack</h3>
-            <p>MundosE:<br>2021</p>
-        </div>
-
-        <div  class="bloque-formacion">
-            <img src="../../../assets/formacion alura.png" alt="Alura" width="150px" height="130px">
-            <h3>Desarrollo Full-Stack: programa "ONE"</h3>
-            <p>Alura Latam:<br>2022</p>
-        </div>
-
-        <div  class="bloque-formacion"> 
-            <img src="../../../assets/argentinaPrograma.jpg" alt="argentinaPrograma" width="150px" height="130px">
-            <h3>Desarrollo Full-Stack </h3>
-            <p> Argentina Programa:<br>2022 - En curso</p>
-        </div>
-    </div>
-
-</section>
+<div class="experiencia-titulo">
+    <h1>Formación</h1>
+    <button routerLink="/nueva-ed" *ngIf="isLogged">Cargar Formación</button>
+</div>
+<div class="experiencia-lista">
+    <tbody>
+        <tr *ngFor="let Educacion of ed">
+            <td><h2>{{Educacion.nombreEd}}</h2></td>
+            <td>{{Educacion.descripcionEd}}</td>
+            <td *ngIf="isLogged"><button routerLink="/editar-ed/{{Educacion.id}}">Editar</button></td>
+            <td *ngIf="isLogged"><button (click)="delete(Educacion.id)">Borrar</button></td>
+        </tr>
+    </tbody>
+</div>

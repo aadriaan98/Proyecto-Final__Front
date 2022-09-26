@@ -21,6 +21,8 @@ import { FormsModule } from '@angular/forms';
 import { ExpLaboralComponent } from './componentes/exp-laboral/exp-laboral.component';
 import { NuevaExpComponent } from './componentes/exp-laboral/nueva-exp.component';
 import { EditarExpComponent } from './componentes/exp-laboral/editar-exp.component';
+import { NuevaEdComponent } from './componentes/formacion/nueva-ed.component';
+import { EditarEdComponent } from './componentes/formacion/editar-ed.component';
 
 
 
@@ -42,7 +44,9 @@ import { EditarExpComponent } from './componentes/exp-laboral/editar-exp.compone
     HomeComponent,
     ExpLaboralComponent,
     NuevaExpComponent,
-    EditarExpComponent
+    EditarExpComponent,
+    NuevaEdComponent,
+    EditarEdComponent
     
   ],
   imports: [

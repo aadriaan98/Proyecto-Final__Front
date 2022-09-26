@@ -1,0 +1,24 @@
+<section>
+    <div class="form-container" *ngIf="educacion">
+        <h1>cargar formación</h1>
+        <form #f="ngForm" (ngSubmit)="onUpdate()" novalidate>
+            <div class="control">
+                <label for="nombreEd">Nombre de la Institución</label>
+                <input type="text" 
+                       id="nombreEd"  
+                       name="nombreEd" 
+                       [(ngModel)]="educacion.nombreEd" required>
+            </div>
+            <div class="control">
+                <label for="descripcionEd">Descripción</label>
+                <input type="text" 
+                       name="descripcionEd" 
+                       id="descripcionEd"
+                       [(ngModel)]="educacion.descripcionEd" required>
+            </div>
+            <div class="control">
+                <input type="submit" value="Editar">
+            </div>
+        </form>
+    </div>
+</section>
