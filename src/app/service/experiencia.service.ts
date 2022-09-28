@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable} from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Explaboral } from '../model/explaboral';
 
 @Injectable({
@@ -8,7 +9,7 @@ import { Explaboral } from '../model/explaboral';
 })
 export class ExperienciaService {
 
-  URL = 'http://localhost:8080/experiencia-laboral/';
+  URL = environment.URL + 'experiencia-laboral/';
 
   constructor(private httpClient : HttpClient) { }
 

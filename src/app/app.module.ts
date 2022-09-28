@@ -8,7 +8,6 @@ import { PresentacionComponent } from './componentes/presentacion/presentacion.c
 import { BodyComponent } from './componentes/body/body.component';
 import { SobreMiComponent } from './componentes/sobre-mi/sobre-mi.component';
 import { HardSkillsComponent } from './componentes/hard-skills/hard-skills.component';
-import { SoftSkillsComponent } from './componentes/soft-skills/soft-skills.component';
 import { FormacionComponent } from './componentes/formacion/formacion.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { FooterComponent } from './componentes/footer/footer.component';
@@ -23,6 +22,8 @@ import { NuevaExpComponent } from './componentes/exp-laboral/nueva-exp.component
 import { EditarExpComponent } from './componentes/exp-laboral/editar-exp.component';
 import { NuevaEdComponent } from './componentes/formacion/nueva-ed.component';
 import { EditarEdComponent } from './componentes/formacion/editar-ed.component';
+import { NuevaSkillsComponent } from './componentes/hard-skills/nueva-skills.component';
+import { EditarskillComponent } from './componentes/hard-skills/editarskill.component';
 
 
 
@@ -36,7 +37,6 @@ import { EditarEdComponent } from './componentes/formacion/editar-ed.component';
     BodyComponent,
     SobreMiComponent,
     HardSkillsComponent,
-    SoftSkillsComponent,
     FormacionComponent,
     ProyectosComponent,
     FooterComponent,
@@ -46,8 +46,9 @@ import { EditarEdComponent } from './componentes/formacion/editar-ed.component';
     NuevaExpComponent,
     EditarExpComponent,
     NuevaEdComponent,
-    EditarEdComponent
-    
+    EditarEdComponent,
+    NuevaSkillsComponent,
+    EditarskillComponent  
   ],
   imports: [
     BrowserModule,

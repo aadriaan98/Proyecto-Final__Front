@@ -1,203 +1,39 @@
 <section id="skills">
-
-    <div id="bloque-titulo">
-        
-        <div class="bloque-skills_titulo">
-            <h2>
-                Hard-Skills
-            </h2>
-        </div>
-
+  <div id="bloque-titulo">
+    <div class="bloque-skills_titulo">
+      <h2>Hard-Skills</h2>
+      <button routerLink="/nueva-skills" *ngIf="isLogged">Nueva Skill</button>
     </div>
-    
-    <div class="bloque-skills">
-             <ul>
+  </div>
 
-                <li>
-
-                    <div class="bloque-skills_item">
-
-                        <circle-progress
-                            [percent]="90"
-                            [radius]="100"
-                            [outerStrokeWidth]="8"
-                            [innerStrokeWidth]="1"
-                            [outerStrokeColor]="'#f16524'"
-                            [innerStrokeColor]="'#f16524'"
-                            [backgroundColor]="'transparent'"
-                            [backgroundGradientStopColor]="'transparent'"
-                            [backgroundStroke]="'transparent'"
-                            [outerStrokeGradientStopColor]="'transparent'"
-                            [showTitle]="false"
-                            [showSubtitle]="false"
-                            [animation]="true"
-                            [animationDuration]="500"
-                            [imageSrc]="'../../../assets/html.png'"
-                            [showImage]="true"
-                            [imageWidth]="50"
-                            [imageHeight]="50"
-                            [radius]="70"
-                            >           
-                        </circle-progress>
-
-                    </div>
-
-                </li>
-            
-                <li>
-                    <div class="bloque-skills_item">
-
-                        <circle-progress
-                            [percent]="80"
-                            [radius]="100"
-                            [outerStrokeWidth]="8"
-                            [innerStrokeWidth]="1"
-                            [outerStrokeColor]="'#1b84c1'"
-                            [innerStrokeColor]="'#1b84c1'"
-                            [backgroundColor]="'transparent'"
-                            [backgroundGradientStopColor]="'transparent'"
-                            [backgroundStroke]="'transparent'"
-                            [outerStrokeGradientStopColor]="'transparent'"
-                            [showTitle]="false"
-                            [showSubtitle]="false"
-                            [animation]="true"
-                            [animationDuration]="500"
-                            [imageSrc]="'../../../assets/css.webp'"
-                            [showImage]="true"
-                            [imageWidth]="58"
-                            [imageHeight]="58"
-                            [radius]="70"
-                            >           
-                        </circle-progress>  
-
-                    </div>
-                    
-                </li>
-                
-                <li>
-                    <div class="bloque-skills_item">
-
-                    <circle-progress
-                            [percent]="70"
-                            [radius]="100"
-                            [outerStrokeWidth]="8"
-                            [innerStrokeWidth]="1"
-                            [outerStrokeColor]="'#efd81d'"
-                            [innerStrokeColor]="'#efd81d'"
-                            [backgroundColor]="'transparent'"
-                            [backgroundGradientStopColor]="'transparent'"
-                            [backgroundStroke]="'transparent'"
-                            [outerStrokeGradientStopColor]="'transparent'"
-                            [showTitle]="false"
-                            [showSubtitle]="false"
-                            [animation]="true"
-                            [animationDuration]="500"
-                            [imageSrc]="'../../../assets/js.png'"
-                            [showImage]="true"
-                            [imageWidth]="50"
-                            [imageHeight]="50"
-                            [radius]="70"
-                            >           
-                    </circle-progress>
-                
-                </div>
-        
-                </li>
-
-                <li>
-
-                    <div class="bloque-skills_item">
-                        
-                        <circle-progress
-                                [percent]="60"
-                                [radius]="100"
-                                [outerStrokeWidth]="8"
-                                [innerStrokeWidth]="1"
-                                [outerStrokeColor]="'crimson'"
-                                [innerStrokeColor]="'crimson'"
-                                [backgroundColor]="'transparent'"
-                                [backgroundGradientStopColor]="'transparent'"
-                                [backgroundStroke]="'transparent'"
-                                [outerStrokeGradientStopColor]="'transparent'"
-                                [showTitle]="false"
-                                [showSubtitle]="false"
-                                [animation]="true"
-                                [animationDuration]="500"
-                                [imageSrc]="'../../../assets/angular.svg'"
-                                [showImage]="true"
-                                [imageWidth]="90"
-                                [imageHeight]="30"
-                                [radius]="70"
-                                >           
-                        </circle-progress>
-
-                    </div>
-                  
-                </li>
-
-                <li>
-                    <div class="bloque-skills_item">
-                        
-                        <circle-progress
-                            [percent]="75"
-                            [radius]="100"
-                            [outerStrokeWidth]="8"
-                            [innerStrokeWidth]="1"
-                            [outerStrokeColor]="'red'"
-                            [innerStrokeColor]="'royalblue'"
-                            [backgroundColor]="'transparent'"
-                            [backgroundGradientStopColor]="'transparent'"
-                            [backgroundStroke]="'transparent'"
-                            [outerStrokeGradientStopColor]="'transparent'"
-                            [showTitle]="false"
-                            [showSubtitle]="false"
-                            [animation]="true"
-                            [animationDuration]="500"
-                            [imageSrc]="'../../../assets/java.png'"
-                            [showImage]="true"
-                            [imageWidth]="58"
-                            [imageHeight]="58"
-                            [radius]="70"
-                            >           
-                        </circle-progress>
-
-                    </div>
-                    
-                </li>
-
-                <li>
-
-                    <div class="bloque-skills_item">
-                       
-                        <circle-progress
-                            [percent]="60"
-                            [radius]="100"
-                            [outerStrokeWidth]="8"
-                            [innerStrokeWidth]="1"
-                            [outerStrokeColor]="'#5ace5a'"
-                            [innerStrokeColor]="'#5ace5a'"
-                            [backgroundColor]="'transparent'"
-                            [backgroundGradientStopColor]="'transparent'"
-                            [backgroundStroke]="'transparent'"
-                            [outerStrokeGradientStopColor]="'transparent'"
-                            [showTitle]="false"
-                            [showSubtitle]="false"
-                            [animation]="true"
-                            [animationDuration]="500"
-                            [imageSrc]="'../../../assets/spring-boot-logo.png'"
-                            [showImage]="true"
-                            [imageWidth]="90"
-                            [imageHeight]="50"
-                            [radius]="70"
-                            >           
-                        </circle-progress>
-
-                    </div> 
-                   
-                </li>
-
-            </ul>
-
-    </div>  
-
+  <div class="bloque-skills">
+    <ul>
+      <li>
+        <div class="bloque-skills_item" *ngFor="let skill of skill">
+          <circle-progress
+          [percent]="(skill.porcentajeS)" 
+          [radius]="90" 
+          [imageSrc]="''" 
+          [title]="(skill.nombreS)"
+          [titleColor]="'#ffffff'"
+          [showTitle]="true" 
+          [showImage]="false" 
+          [imageHeight]="70" 
+          [imageWidth]="70" 
+          [showUnits]="false"
+          [showSubtitle]="false" 
+          [outerStrokeWidth]="16" 
+          [innerStrokeWidth]="2" 
+          [outerStrokeColor]="'crimson'"
+          [innerStrokeColor]="'crimson'" 
+          [animation]="true" 
+          [animationDuration]="100">
+          >
+          </circle-progress>
+          <td *ngIf="isLogged"><button routerLink="/editarskill/{{skill.id}}">Editar</button></td>
+          <td *ngIf="isLogged"><button (click)="borrar(skill.id)">Borrar</button></td>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>

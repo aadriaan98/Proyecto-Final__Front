@@ -4,6 +4,8 @@ import { EditarExpComponent } from './componentes/exp-laboral/editar-exp.compone
 import { NuevaExpComponent } from './componentes/exp-laboral/nueva-exp.component';
 import { EditarEdComponent } from './componentes/formacion/editar-ed.component';
 import { NuevaEdComponent } from './componentes/formacion/nueva-ed.component';
+import { EditarskillComponent } from './componentes/hard-skills/editarskill.component';
+import { NuevaSkillsComponent } from './componentes/hard-skills/nueva-skills.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
 
@@ -14,7 +16,9 @@ const routes: Routes = [
   { path:'nueva-exp', component:NuevaExpComponent },
   { path:'editar-exp/:id', component:EditarExpComponent },
   { path:'nueva-ed', component:NuevaEdComponent },
-  { path:'editar-ed/:id', component:EditarEdComponent }
+  { path:'editar-ed/:id', component:EditarEdComponent },
+  { path:'nueva-skills', component: NuevaSkillsComponent },
+  { path:'editarskill/:id', component:EditarskillComponent }
 ];
 
 @NgModule({

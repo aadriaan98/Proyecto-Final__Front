@@ -1,0 +1,24 @@
+<section>
+    <div class="form-container" *ngIf="skill">
+        <h1>cargar skill</h1>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="control">
+                <label for="nombreS">Nombre de la Skill</label>
+                <input type="text" 
+                       id="nombreS"  
+                       name="nombreS" 
+                       [(ngModel)]="skill.nombreS" required>
+            </div>
+            <div class="control">
+                <label for="porcentajeS">Porcentaje</label>
+                <input type="text" 
+                       name="porcentajeS" 
+                       id="porcentajeS"
+                       [(ngModel)]="skill.porcentajeS" required>
+            </div>
+            <div class="control">
+                <input type="submit" value="Editar">
+            </div>
+        </form>
+    </div>
+</section> 
