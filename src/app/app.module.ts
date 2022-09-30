@@ -22,8 +22,8 @@ import { NuevaExpComponent } from './componentes/exp-laboral/nueva-exp.component
 import { EditarExpComponent } from './componentes/exp-laboral/editar-exp.component';
 import { NuevaEdComponent } from './componentes/formacion/nueva-ed.component';
 import { EditarEdComponent } from './componentes/formacion/editar-ed.component';
-import { NuevaSkillsComponent } from './componentes/hard-skills/nueva-skills.component';
 import { EditarskillComponent } from './componentes/hard-skills/editarskill.component';
+import { NuevaskillComponent } from './componentes/hard-skills/nuevaskill.component';
 
 
 
@@ -47,8 +47,8 @@ import { EditarskillComponent } from './componentes/hard-skills/editarskill.comp
     EditarExpComponent,
     NuevaEdComponent,
     EditarEdComponent,
-    NuevaSkillsComponent,
-    EditarskillComponent  
+    EditarskillComponent,
+    NuevaskillComponent  
   ],
   imports: [
     BrowserModule,

@@ -1,18 +1,15 @@
 <section id="skills">
   <div id="bloque-titulo">
-    <div class="bloque-skills_titulo">
-      <h2>Hard-Skills</h2>
-      <button routerLink="/nueva-skills" *ngIf="isLogged">Nueva Skill</button>
-    </div>
+      <h2>Skills</h2>
+      <button routerLink="/nuevaskill" *ngIf="isLogged">Nueva Skill</button>
   </div>
 
   <div class="bloque-skills">
-    <ul>
-      <li>
+
         <div class="bloque-skills_item" *ngFor="let skill of skill">
           <circle-progress
-          [percent]="(skill.porcentajeS)" 
-          [radius]="90" 
+          [percent]="100"
+          [radius]="70" 
           [imageSrc]="''" 
           [title]="(skill.nombreS)"
           [titleColor]="'#ffffff'"
@@ -24,16 +21,15 @@
           [showSubtitle]="false" 
           [outerStrokeWidth]="16" 
           [innerStrokeWidth]="2" 
-          [outerStrokeColor]="'crimson'"
-          [innerStrokeColor]="'crimson'" 
+          [outerStrokeColor]="'#6d71c5'"
+          [innerStrokeColor]="'#6d71c5'" 
           [animation]="true" 
-          [animationDuration]="100">
+          [animationDuration]="500">
           >
           </circle-progress>
           <td *ngIf="isLogged"><button routerLink="/editarskill/{{skill.id}}">Editar</button></td>
           <td *ngIf="isLogged"><button (click)="borrar(skill.id)">Borrar</button></td>
         </div>
-      </li>
-    </ul>
   </div>
 </section>
+<div class="separacion"></div>

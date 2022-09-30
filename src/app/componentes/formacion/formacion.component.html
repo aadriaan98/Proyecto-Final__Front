@@ -1,14 +1,17 @@
-<div class="experiencia-titulo">
-    <h1>Formación</h1>
-    <button routerLink="/nueva-ed" *ngIf="isLogged">Cargar Formación</button>
-</div>
-<div class="experiencia-lista">
-    <tbody>
-        <tr *ngFor="let Educacion of ed">
-            <td><h2>{{Educacion.nombreEd}}</h2></td>
-            <td>{{Educacion.descripcionEd}}</td>
-            <td *ngIf="isLogged"><button routerLink="/editar-ed/{{Educacion.id}}">Editar</button></td>
-            <td *ngIf="isLogged"><button (click)="delete(Educacion.id)">Borrar</button></td>
-        </tr>
-    </tbody>
-</div>
+<section>
+    <div class="experiencia-titulo">
+        <h2>Formación</h2>
+        <button routerLink="/nueva-ed" *ngIf="isLogged">Cargar Formación</button>
+    </div>
+    <div class="experiencia-lista">
+        <tbody>
+            <tr *ngFor="let Educacion of ed">
+                <td><h2>{{Educacion.nombreEd}}</h2></td>
+                <td>{{Educacion.descripcionEd}}</td>
+                <td *ngIf="isLogged"><button routerLink="/editar-ed/{{Educacion.id}}">Editar</button></td>
+                <td *ngIf="isLogged"><button (click)="delete(Educacion.id)">Borrar</button></td>
+            </tr>
+        </tbody>
+    </div>
+</section>
+<div class="separacion"></div>

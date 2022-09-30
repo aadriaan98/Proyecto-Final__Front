@@ -1,23 +1,18 @@
+section{
+    text-shadow: 2px 2px black;
+    color: white;
+}
 .presentacion{
     width: 100%;
-    background-image: linear-gradient(135deg,#25184d, #51254b);
-    background-size: 500%;
-    animation: fanimado 5s infinite;
+    height: auto;
+    background-image: url(../../../assets/fondo-presentacion11.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center center;
     font-family: initial;
     color: white;
     display: flex;
     flex-direction: column-reverse;
-}
-@keyframes fanimado{
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
 }
 .presentacion img{
     width: 110px;
@@ -36,7 +31,7 @@
 }
 .titulos h3{
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     color: #ffffff;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -44,8 +39,21 @@
 .nav-presentacion{
     height: 50px;
     display: flex;
-    background-image: linear-gradient(#25184d, #121d70);
+    background-image: linear-gradient(135deg,#25184d, #121d70);
+    background-size: 500%;
+    animation: fanimado 2s infinite;
     padding-left: 0.5rem;
+}
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 .nav-presentacion img{
     width: 30px;

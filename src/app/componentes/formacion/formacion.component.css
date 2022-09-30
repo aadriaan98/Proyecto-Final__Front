@@ -1,14 +1,99 @@
 section{
-    padding-bottom: 2rem;
-}
-#formacion{
     width: 100%;
-    height: 750px;
-    padding-bottom: 2rem;
-    background-image: linear-gradient(135deg,
-    #25184d, #51254b);
+    height: auto;
+    background-image: url(../../../assets/formacion-nebulosa.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center center;
+    text-shadow: 2px 2px black;
+    color: white;
+}
+.experiencia-titulo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.experiencia-titulo h2{
+    margin-top: 1em;
+    margin-left: 1em;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+.experiencia-titulo button{
+    width: 40%;
+    background:royalblue;
+    color:#fff;
+    text-transform:uppercase;
+    font-size:1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    height: 40px;  
+    transition: transform;
+}
+.experiencia-titulo button:hover{
+    scale:1.02;
+}
+@media screen and (min-width:600px){
+    .experiencia-titulo button{
+        width: 20%;
+    }
+}
+@media screen and (min-width:912px) {
+    .experiencia-titulo h2{
+        font-size: 35px;
+    }
+    .experiencia-titulo button{
+        margin: 2.2rem;
+    }
+}
+.experiencia-lista{
+    width: 95%;
+    height: auto;  
+}
+.experiencia-lista tbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.experiencia-lista tr{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.experiencia-lista td{
+    margin: .5em;
+    text-shadow: 2px 2px black;
+    color: white;
+    justify-content: space-between;
+}
+.experiencia-lista h2{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.experiencia-lista button{
+    background:royalblue;
+    color:#fff;
+    text-transform:uppercase;
+    font-size:1em;
+    height: 40px;  
+    transition: transform;
+}
+.experiencia-lista button:hover{
+    scale:1.02;
+}
+@media screen and (min-width:768px) {
+    .experiencia-lista tr{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }  
+}
+.separacion{
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(135deg,#25184d, #121d70);
     background-size: 500%;
-    animation: fanimado 7s infinite;
+    animation: fanimado 2s infinite;
 }
 @keyframes fanimado{
     0%{
@@ -19,92 +104,5 @@ section{
     }
     100%{
         background-position: 0% 50%;
-    }
-}
-#formacion div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#formacion h2{
-    text-align: center;
-    font-size: 22px;
-    color: #ffffff;
-    font-weight: 700;
-    padding-top: 2rem;
-}
-div .bloque-formacion{
-    width: 200px;
-    height: 118px;
-    text-align: center;
-    background: #ffffff;
-    margin: 3rem;
-}
-.bloque-formacion img{
-    width: 84px;
-    height: 58px;
-    margin-top: 2rem;
-}
-.bloque-formacion h3{
-   font-weight: 700;
-   font-size: 16px;
-   color: #ffffff;
-   margin-top: 2rem;
-}
-.bloque-formacion p{
-    color: #ffffff;
-}
-@media screen and (min-width:480px) {
-    #formacion{
-        width: 100%;
-        height: 300px;
-    }
-    #formacion div{
-        margin-left: 1rem;
-        flex-direction: row;
-        width: 100%;
-        margin-top: 1rem;
-    }
-    .bloque-formacion{
-        justify-content: center;
-    }
-
-    div .bloque-formacion{
-        width: 250px;
-        background: #ffffff;
-    }
-    .bloque-formacion img{
-        position: absolute;
-        margin:0;
-    }
-    .bloque-formacion h3{
-        margin-top: 12rem;
-    }
-    .bloque-formacion p{
-        margin-top: 18rem;
-        position: absolute;
-    }
-}
-@media screen and (min-width:912px) {
-    #formacion{
-        height: 581px;
-    }
-    #formacion h2{
-        font-size: 35px;
-    }
-    div .bloque-formacion{
-        width: 368px;
-        height: 286px;
-    }
-    .bloque-formacion img{
-        width: 192px;
-        height: 130px;
-    }
-    .bloque-formacion h3{
-        margin-top: 21rem;
-    }
-    .bloque-formacion p{
-        margin-top: 26rem;
-        position: absolute;
     }
 }

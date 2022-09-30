@@ -1,10 +1,34 @@
 #sobre-mi{
     width: 100%;
-    background-image: linear-gradient(135deg,
-    #25184d, #51254b);
-    background-size: 500%;
-    animation: fanimado 5s infinite;
+    background-image: url(../../../assets/nebulosa.jpg);
     padding-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center center;
+    text-shadow: 2px 2px black;
+    color: white;
+}
+#sobre-mi h2{
+    width: 90%;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 1rem;
+}
+#sobre-mi p{
+    width: 90%;
+    height: 70%;
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+.separacion{
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(135deg,#25184d, #121d70);
+    background-size: 500%;
+    animation: fanimado 2s infinite;
 }
 @keyframes fanimado{
     0%{
@@ -16,23 +40,6 @@
     100%{
         background-position: 0% 50%;
     }
-}
-#sobre-mi h2{
-    width: 90%;
-    font-size: 22px;
-    font-weight: 700;
-    padding: 1rem;
-    color: #ffffff;
-}
-#sobre-mi p{
-    width: 90%;
-    height: 70%;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 16px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
 }
 @media screen and (min-width:480px) {
     #sobre-mi{
