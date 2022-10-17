@@ -9,7 +9,7 @@ import { Explaboral } from '../model/explaboral';
 })
 export class ExperienciaService {
 
-  URL = environment.URL + 'experiencia-laboral/';
+  URL = 'https://back-portfolio-adrian.herokuapp.com/experiencia-laboral/';
 
   constructor(private httpClient : HttpClient) { }
 

@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class PersonaService {
 
-  URL = environment.URL + 'personas/';
+  URL = 'https://back-portfolio-adrian.herokuapp.com/personas/';
 
   constructor(private http: HttpClient) { }
   
